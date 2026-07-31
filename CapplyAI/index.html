@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ApplyAI — Apply to 50 jobs a day. Without lifting a finger.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><span class="logo-dot"></span> CapplyAI</div>
+      <button class="nav-cta" id="nav-join" type="button">Join waitlist</button>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-badge"><span></span> Early access — limited spots</div>
+      <h1>Apply to <em>50 jobs a day.</em><br />Without lifting a finger.</h1>
+      <p class="hero-sub">Upload your resume, tell us what you're looking for, and our AI finds jobs, tailors your application, submits it, and follows up — on autopilot.</p>
+      <div class="hero-form">
+        <input type="email" id="hero-email" placeholder="your@email.com" />
+        <button id="hero-submit" type="button">Get early access</button>
+      </div>
+      <p class="hero-note">No credit card needed &nbsp;·&nbsp; Cancel anytime</p>
+      <p class="success-hero" id="hero-success" aria-live="polite">&#10003; You're on the list! We'll be in touch soon.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stats-inner">
+        <div>
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Applications per day</div>
+        </div>
+        <div>
+          <div class="stat-num">3×</div>
+          <div class="stat-label">More interviews</div>
+        </div>
+        <div>
+          <div class="stat-num">10 hrs</div>
+          <div class="stat-label">Saved every week</div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="section-inner">
+        <div class="eyebrow">How it works</div>
+        <h2>From resume to offer letter — fully automated</h2>
+        <p class="section-sub">Four steps. Zero manual work.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <div class="step-title">Upload your resume</div>
+              <div class="step-desc">We parse your skills, experience, and goals to build a complete candidate profile in seconds.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <div class="step-title">Set your preferences</div>
+              <div class="step-desc">Tell us the role, location, salary range, and remote preference. We search LinkedIn, Indeed, and more — simultaneously.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <div class="step-title">AI tailors and submits</div>
+              <div class="step-desc">Every application gets a custom cover letter and a resume tuned to that job's exact keywords and ATS requirements.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div>
+              <div class="step-title">Automatic follow-ups</div>
+              <div class="step-desc">Personalised emails sent at day 5 and day 14 keep you top of mind. Track every application from your dashboard.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section">
+      <div class="section-inner">
+        <div class="eyebrow">Pricing</div>
+        <h2>Simple, honest pricing</h2>
+        <p class="section-sub">Lock in your founding member rate — 40% off when you join the waitlist today.</p>
+        <div class="pricing-grid">
+          <div class="plan">
+            <div class="plan-eyebrow">Starter</div>
+            <div class="plan-name">Starter</div>
+            <div class="plan-price">₦3500<span>/mo</span></div>
+            <div class="plan-desc">For casual job seekers getting started</div>
+            <ul class="plan-features">
+              <li><span class="check">✓</span> 10 applications per day</li>
+              <li><span class="check">✓</span> Cover letter generation</li>
+              <li><span class="check">✓</span> Basic follow-up emails</li>
+              <li><span class="check">✓</span> Application dashboard</li>
+              <li><span class="check">✓</span> Email support</li>
+            </ul>
+            <button class="plan-btn" type="button" id="starter-join">Join waitlist</button>
+          </div>
+
+          <div class="plan featured">
+            <div class="popular-badge">Most popular</div>
+            <div class="plan-eyebrow">Pro</div>
+            <div class="plan-name">Pro</div>
+            <div class="plan-price">₦13,500<span>/mo</span></div>
+            <div class="plan-desc">For serious job seekers who want results fast</div>
+            <ul class="plan-features">
+              <li><span class="check">✓</span> 50 applications per day</li>
+              <li><span class="check">✓</span> Resume tailoring per job</li>
+              <li><span class="check">✓</span> Smart follow-up sequences</li>
+              <li><span class="check">✓</span> ATS keyword optimisation</li>
+              <li><span class="check">✓</span> Priority support</li>
+            </ul>
+            <button class="plan-btn" type="button" id="pro-join">Join waitlist</button>
+          </div>
+
+          <div class="plan">
+            <div class="plan-eyebrow">Agency</div>
+            <div class="plan-name">Agency</div>
+            <div class="plan-price">₦50,000<span>/mo</span></div>
+            <div class="plan-desc">For recruiters and career coaches</div>
+            <ul class="plan-features">
+              <li><span class="check">✓</span> Up to 10 candidate profiles</li>
+              <li><span class="check">✓</span> All Pro features included</li>
+              <li><span class="check">✓</span> White-label reports</li>
+              <li><span class="check">✓</span> Dedicated onboarding call</li>
+              <li><span class="check">✓</span> Slack support channel</li>
+            </ul>
+            <button class="plan-btn" type="button" id="agency-join">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner">
+        <div class="eyebrow">Early users</div>
+        <h2>What people are saying</h2>
+        <p class="section-sub">From our beta testers who used the system manually before we automated it.</p>
+        <div class="testi-grid">
+          <div class="testi">
+            <div class="testi-text">I applied to 20 jobs in my first week and got 6 interviews. I would have spent a whole month doing that manually.</div>
+            <div class="testi-author">
+              <div class="avatar" style="background:#E6F4EE; color:#1A6B4A;">MK</div>
+              <div>
+                <div class="testi-name">Marcus K.</div>
+                <div class="testi-role">Software engineer, Lagos</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi">
+            <div class="testi-text">The follow-up emails alone are worth it. I landed a role after the company ignored me for two weeks — the day-14 email got a response in 3 hours.</div>
+            <div class="testi-author">
+              <div class="avatar" style="background:#EEF4FF; color:#2248A4;">TN</div>
+              <div>
+                <div class="testi-name">Tara N.</div>
+                <div class="testi-role">Marketing manager, Abuja</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi">
+            <div class="testi-text">As a fresh graduate it felt impossible competing with experienced candidates. ApplyAI let me cast a much wider net and the tailored cover letters made all the difference.</div>
+            <div class="testi-author">
+              <div class="avatar" style="background:#FEF3E2; color:#854F0B;">AO</div>
+              <div>
+                <div class="testi-name">Ade O.</div>
+                <div class="testi-role">NYSC, Recent graduate, Port Harcourt</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi">
+            <div class="testi-text">I run a small recruiting firm and this has 10x'd my capacity. I can now manage twice as many candidates with the same team size.</div>
+            <div class="testi-author">
+              <div class="avatar" style="background:#F3EEF8; color:#533B8C;">FI</div>
+              <div>
+                <div class="testi-name">Fatima I.</div>
+                <div class="testi-role">Recruitment consultant, Kano</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="waitlist-section" id="waitlist">
+      <div class="waitlist-inner">
+        <div class="eyebrow" style="color: #6ee9b4;">Get early access</div>
+        <h2>Be first in line.</h2>
+        <p>Join the waitlist and lock in your launch price — 40% off for founding members. No credit card required.</p>
+        <div class="waitlist-form">
+          <input type="email" id="waitlist-email" placeholder="your@email.com" />
+          <button id="waitlist-submit" type="button">Join waitlist</button>
+        </div>
+        <p class="waitlist-note">No spam. Unsubscribe any time. You'll hear from us the moment we launch.</p>
+        <p class="success-waitlist" id="waitlist-success" aria-live="polite">&#10003; You're on the list! We'll be in touch soon.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 CapplyAI &nbsp;·&nbsp; &nbsp;·&nbsp; <a href="mailto:hello@applyai.ng" style="color: var(--accent-mid);">info@CapplyAI.ng</a></p>
+    </footer>
+  </body>
+</html>
