@@ -13,6 +13,8 @@
   --accent: #1a6b4a;
   --accent-light: #e6f4ee;
   --accent-mid: #2d9b6a;
+  --button-blue: #2563eb;
+  --button-blue-hover: #1d4ed8;
   --danger: #c0392b;
   --info-bg: #eef4ff;
   --info-text: #2248a4;
@@ -71,7 +73,7 @@ nav {
 }
 
 .nav-cta {
-  background: var(--black);
+  background: var(--button-blue);
   color: var(--white);
   padding: 8px 20px;
   border-radius: var(--radius);
@@ -82,7 +84,7 @@ nav {
 }
 
 .nav-cta:hover {
-  background: #2a2a2a;
+  background: var(--button-blue-hover);
 }
 
 .hero {
@@ -137,7 +139,7 @@ h1 {
 
 h1 em {
   font-style: normal;
-  color: var(--accent-mid);
+  color: var(--button-blue);
 }
 
 .hero-sub {
@@ -174,7 +176,7 @@ h1 em {
 .hero-form button,
 .waitlist-form button {
   padding: 13px 24px;
-  background: var(--black);
+  background: var(--button-blue);
   color: var(--white);
   border: none;
   border-radius: var(--radius);
@@ -187,7 +189,7 @@ h1 em {
 
 .hero-form button:hover,
 .waitlist-form button:hover {
-  background: #2a2a2a;
+  background: var(--button-blue-hover);
 }
 
 .hero-note {
